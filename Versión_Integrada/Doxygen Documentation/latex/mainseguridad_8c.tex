@@ -1,0 +1,131 @@
+\doxysection{Versi√≥n\+\_\+\+Integrada/seguridad.X/mainseguridad.c File Reference}
+\hypertarget{mainseguridad_8c}{}\label{mainseguridad_8c}\index{Versi√≥n\_Integrada/seguridad.X/mainseguridad.c@{Versi√≥n\_Integrada/seguridad.X/mainseguridad.c}}
+
+
+Project Casa Inteligente.  
+
+
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include $<$pic16f887.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}lcd.\+h"{}}\newline
+{\ttfamily \#include "{}keypad.\+h"{}}\newline
+{\ttfamily \#include "{}fuses.\+h"{}}\newline
+{\ttfamily \#include "{}sensor.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{mainseguridad_8c_a40b4fe45622d5b33767ead7735f354c4}\label{mainseguridad_8c_a40b4fe45622d5b33767ead7735f354c4} 
+\#define {\bfseries beta}~4090
+\item 
+\Hypertarget{mainseguridad_8c_a2ce3f00008e9906b1e95be78df170b7b}\label{mainseguridad_8c_a2ce3f00008e9906b1e95be78df170b7b} 
+\#define {\bfseries resistance}~10
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{mainseguridad_8c_adc6e5733fc3c22f0a7b2914188c49c90}\label{mainseguridad_8c_adc6e5733fc3c22f0a7b2914188c49c90} 
+enum {\bfseries state} \{ \newline
+{\bfseries seguridad}
+, {\bfseries monitoreo\+\_\+digital}
+, {\bfseries monitoreo\+\_\+ambiental}
+, {\bfseries bloqueado}
+, \newline
+{\bfseries alarma\+\_\+seguridad}
+, {\bfseries alarma\+\_\+ambiental}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{mainseguridad_8c_a3a0a416ef14da7aa0c9ac5ad048e974a}\label{mainseguridad_8c_a3a0a416ef14da7aa0c9ac5ad048e974a} 
+void {\bfseries function\+\_\+seguridad} (void)
+\item 
+\Hypertarget{mainseguridad_8c_a323eab3cba8dc27e1a2d3ee6ea615bf9}\label{mainseguridad_8c_a323eab3cba8dc27e1a2d3ee6ea615bf9} 
+void {\bfseries function\+\_\+monitoreo\+\_\+digital} (void)
+\item 
+\Hypertarget{mainseguridad_8c_ad08b69b642a6adaa4d9244f331113c40}\label{mainseguridad_8c_ad08b69b642a6adaa4d9244f331113c40} 
+void {\bfseries function\+\_\+monitoreo\+\_\+ambiental} (void)
+\item 
+\Hypertarget{mainseguridad_8c_a6854e18c418621b8eac9d2af7378721c}\label{mainseguridad_8c_a6854e18c418621b8eac9d2af7378721c} 
+void {\bfseries function\+\_\+bloqueado} (void)
+\item 
+\Hypertarget{mainseguridad_8c_a90b833903001af182139726166f1f92b}\label{mainseguridad_8c_a90b833903001af182139726166f1f92b} 
+void {\bfseries function\+\_\+alarma\+\_\+seguridad} (void)
+\item 
+\Hypertarget{mainseguridad_8c_a20bbf595bb373c6ad2b22d842a8b23c9}\label{mainseguridad_8c_a20bbf595bb373c6ad2b22d842a8b23c9} 
+void {\bfseries function\+\_\+alarma\+\_\+ambiental} (void)
+\item 
+\Hypertarget{mainseguridad_8c_aba6bea57127875fe1d3cdb9a43f8f2ff}\label{mainseguridad_8c_aba6bea57127875fe1d3cdb9a43f8f2ff} 
+void {\bfseries adc\+\_\+begin} (void)
+\item 
+\Hypertarget{mainseguridad_8c_a66e652f78de1ac1146607f762c81391c}\label{mainseguridad_8c_a66e652f78de1ac1146607f762c81391c} 
+int {\bfseries adc\+\_\+conversion} (int channel)
+\item 
+\Hypertarget{mainseguridad_8c_a7a8b02779d16101ad41181194b0cd531}\label{mainseguridad_8c_a7a8b02779d16101ad41181194b0cd531} 
+int {\bfseries convertir\+\_\+temperature} (int temperature)
+\item 
+\Hypertarget{mainseguridad_8c_acdef7a1fd863a6d3770c1268cb06add3}\label{mainseguridad_8c_acdef7a1fd863a6d3770c1268cb06add3} 
+void {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{mainseguridad_8c_a0225b8106d5e999463e92cae40943dd2}\label{mainseguridad_8c_a0225b8106d5e999463e92cae40943dd2} 
+enum state {\bfseries estado}
+\item 
+\Hypertarget{mainseguridad_8c_a4848fce409016cdcb4688dce04443726}\label{mainseguridad_8c_a4848fce409016cdcb4688dce04443726} 
+const char {\bfseries password} \mbox{[}5\mbox{]} =\{\textquotesingle{}2\textquotesingle{},\textquotesingle{}7\textquotesingle{},\textquotesingle{}0\textquotesingle{},\textquotesingle{}9\textquotesingle{},0\}
+\item 
+\Hypertarget{mainseguridad_8c_ae56091c7cf1825f0d64b6c07ae749893}\label{mainseguridad_8c_ae56091c7cf1825f0d64b6c07ae749893} 
+char {\bfseries pass\+\_\+user} \mbox{[}5\mbox{]}
+\item 
+\Hypertarget{mainseguridad_8c_ae269899a408c67c3c75ee0a9d95dc3c5}\label{mainseguridad_8c_ae269899a408c67c3c75ee0a9d95dc3c5} 
+unsigned char {\bfseries idx} = 0
+\item 
+\Hypertarget{mainseguridad_8c_ab825a345b75eb37bdffb9419cb95a27a}\label{mainseguridad_8c_ab825a345b75eb37bdffb9419cb95a27a} 
+unsigned char {\bfseries var\+\_\+sensor\+\_\+ir} = 0
+\item 
+\Hypertarget{mainseguridad_8c_acb758889a10f8795e4c38e4d870867fa}\label{mainseguridad_8c_acb758889a10f8795e4c38e4d870867fa} 
+unsigned char {\bfseries var\+\_\+sensor\+\_\+hall} = 0
+\item 
+\Hypertarget{mainseguridad_8c_a26542df2cd81b5dccbc67393f829f4ac}\label{mainseguridad_8c_a26542df2cd81b5dccbc67393f829f4ac} 
+unsigned char {\bfseries var\+\_\+sensor\+\_\+metal} = 0
+\item 
+\Hypertarget{mainseguridad_8c_ad3f8b457df4de95aaca3cbafae001d2b}\label{mainseguridad_8c_ad3f8b457df4de95aaca3cbafae001d2b} 
+int {\bfseries value\+\_\+potenciometro}
+\item 
+\Hypertarget{mainseguridad_8c_abf50d64ff288cd55bbe34769bea21afd}\label{mainseguridad_8c_abf50d64ff288cd55bbe34769bea21afd} 
+int {\bfseries value\+\_\+temperature}
+\item 
+\Hypertarget{mainseguridad_8c_abcaf9d491607a2cea48b377260e7a434}\label{mainseguridad_8c_abcaf9d491607a2cea48b377260e7a434} 
+int {\bfseries value\+\_\+fotocelda}
+\item 
+\Hypertarget{mainseguridad_8c_af671d2fce2fdc020c113fe3b918846b6}\label{mainseguridad_8c_af671d2fce2fdc020c113fe3b918846b6} 
+unsigned char {\bfseries intentos} =0
+\item 
+\Hypertarget{mainseguridad_8c_a72773c626fe010d1994aea71bc1a355d}\label{mainseguridad_8c_a72773c626fe010d1994aea71bc1a355d} 
+char {\bfseries buffer} \mbox{[}17\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Project Casa Inteligente. 
+
+\begin{DoxyDate}{Date}
+2023-\/09-\/22 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Sebasti·n Belalc·zar Vivas \href{mailto:sebasbelalcazar@unicauca.edu.co}{\texttt{ sebasbelalcazar@unicauca.\+edu.\+co}} 
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Copyright}
+Information contained herein is proprietary to and constitutes valuable confidential trade secrets of unicauca, and is subject to restrictions on use and disclosure.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Copyright (c) unicauca 2023. All rights reserved.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The copyright notices above do not evidence any actual or intended publication of this material. 
+\end{DoxyParagraph}

@@ -1,0 +1,50 @@
+\doxysection{keypad.\+h}
+\hypertarget{keypad_8h_source}{}\label{keypad_8h_source}\index{Versión\_Integrada/seguridad.X/keypad.h@{Versión\_Integrada/seguridad.X/keypad.h}}
+\mbox{\hyperlink{keypad_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifndef\ KEYPAD\_H}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ KEYPAD\_H}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#ifdef\ \ \_\_cplusplus}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{comment}{/*Assigns\ a\ symbolic\ name\ for\ every\ bit\ of\ PORTD's\ pins\ */}\ \ \ \ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ PB7\ \ \ \ \ 7\ }}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ PB6\ \ \ \ \ 6}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ PB5\ \ \ \ \ 5}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ PB4\ \ \ \ \ 4}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ PB3\ \ \ \ \ 3}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ PB2\ \ \ \ \ 2}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ PB1\ \ \ \ \ 1}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ PB0\ \ \ \ \ 0}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{comment}{/*\ FILAS-\/SALIDAS\ */}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ ROW1\ \ \ PB0}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ ROW2\ \ \ PB1}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ ROW3\ \ \ PB2}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ ROW4\ \ \ PB3}}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00043\ \textcolor{comment}{/*\ COLUMNAS-\/ENTRADAS\ */}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ COL1\ \ \ PB4}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ COL2\ \ \ PB5}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ COL3\ \ \ PB6}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ COL4\ \ \ PB7}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{/*define\ macros\ for\ PORTB\ and\ TRISB\ Registers*/}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ PTECLADO\ \ TRISB}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ FILAS\ \ \ \ \ PORTB}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ COLUMNAS\ \ PORTB}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{comment}{/*declares\ functions\ for\ their\ use\ in\ the\ source\ file*/}}
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ keypad\_init\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{char}\ keypad\_getkey(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#ifdef\ \ \_\_cplusplus}}
+\DoxyCodeLine{00059\ \}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ KEYPAD\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

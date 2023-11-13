@@ -1,0 +1,51 @@
+\doxysection{Versi√≥n\+\_\+\+Integrada/seguridad.X/lcd.c File Reference}
+\hypertarget{lcd_8c}{}\label{lcd_8c}\index{Versi√≥n\_Integrada/seguridad.X/lcd.c@{Versi√≥n\_Integrada/seguridad.X/lcd.c}}
+
+
+LCD 16x2.  
+
+
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include "{}lcd.\+h"{}}\newline
+{\ttfamily \#include "{}fuses.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{lcd_8c_aa53c9d40f3aa552a9974cd55ac510cb3}\label{lcd_8c_aa53c9d40f3aa552a9974cd55ac510cb3} 
+void {\bfseries LCD\+\_\+\+Init} (void)
+\item 
+\Hypertarget{lcd_8c_a5deccc9bde4056e7354d6e4a02b24a41}\label{lcd_8c_a5deccc9bde4056e7354d6e4a02b24a41} 
+void {\bfseries LCD\+\_\+\+Command} (unsigned char cmd)
+\item 
+\Hypertarget{lcd_8c_a4d327799821093ffa93c41ec634b0ca6}\label{lcd_8c_a4d327799821093ffa93c41ec634b0ca6} 
+void {\bfseries LCD\+\_\+\+Char} (unsigned char dat)
+\item 
+\Hypertarget{lcd_8c_ae82669e730dd8cd249730db12f4de7c4}\label{lcd_8c_ae82669e730dd8cd249730db12f4de7c4} 
+void {\bfseries LCD\+\_\+\+String} (const char \texorpdfstring{$\ast$}{*}msg)
+\item 
+\Hypertarget{lcd_8c_ac164102b5548d181e0865cca65dffd73}\label{lcd_8c_ac164102b5548d181e0865cca65dffd73} 
+void {\bfseries LCD\+\_\+\+String\+\_\+xy} (char row, char pos, const char \texorpdfstring{$\ast$}{*}msg)
+\item 
+\Hypertarget{lcd_8c_ae60d0b62d7eb3fa31266c095d7b3c245}\label{lcd_8c_ae60d0b62d7eb3fa31266c095d7b3c245} 
+void {\bfseries LCD\+\_\+\+Clear} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+LCD 16x2. 
+
+\begin{DoxyDate}{Date}
+2023-\/09-\/22 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Sebasti·n Belalc·zar Vivas \href{mailto:sebasbelalcazar@unicauca.edu.co}{\texttt{ sebasbelalcazar@unicauca.\+edu.\+co}} 
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Copyright}
+Information contained herein is proprietary to and constitutes valuable confidential trade secrets of unicauca, and is subject to restrictions on use and disclosure.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Copyright (c) unicauca 2023. All rights reserved.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The copyright notices above do not evidence any actual or intended publication of this material. 
+\end{DoxyParagraph}

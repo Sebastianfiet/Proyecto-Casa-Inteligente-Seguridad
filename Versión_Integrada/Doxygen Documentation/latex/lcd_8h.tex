@@ -1,0 +1,63 @@
+\doxysection{Versi√≥n\+\_\+\+Integrada/seguridad.X/lcd.h File Reference}
+\hypertarget{lcd_8h}{}\label{lcd_8h}\index{Versi√≥n\_Integrada/seguridad.X/lcd.h@{Versi√≥n\_Integrada/seguridad.X/lcd.h}}
+
+
+Functions LCD 16x2.  
+
+
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{lcd_8h_af8903d8eea3868940c60af887473b152}\label{lcd_8h_af8903d8eea3868940c60af887473b152} 
+\#define {\bfseries RS}~RD0  /\texorpdfstring{$\ast$}{*}PIN 0 of PORTD is assigned for register select Pin of LCD \texorpdfstring{$\ast$}{*}/
+\item 
+\Hypertarget{lcd_8h_a22e6626f2c98ed902f8ded47f6438c05}\label{lcd_8h_a22e6626f2c98ed902f8ded47f6438c05} 
+\#define {\bfseries EN}~RD1  /\texorpdfstring{$\ast$}{*}PIN 1 of PORTD is assigned for enable Pin of LCD \texorpdfstring{$\ast$}{*}/
+\item 
+\Hypertarget{lcd_8h_a9ab6954b25558526556ab556c4be540b}\label{lcd_8h_a9ab6954b25558526556ab556c4be540b} 
+\#define {\bfseries ldata}~PORTD  /\texorpdfstring{$\ast$}{*}PORTD(PD4-\/PD7) is assigned for LCD Data Output\texorpdfstring{$\ast$}{*}/
+\item 
+\Hypertarget{lcd_8h_aa1454638c60ba2bfd8885e763b6e637b}\label{lcd_8h_aa1454638c60ba2bfd8885e763b6e637b} 
+\#define {\bfseries LCD\+\_\+\+Port}~TRISD  /\texorpdfstring{$\ast$}{*}define macros for PORTD Direction Register\texorpdfstring{$\ast$}{*}/
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{lcd_8h_aa53c9d40f3aa552a9974cd55ac510cb3}\label{lcd_8h_aa53c9d40f3aa552a9974cd55ac510cb3} 
+void {\bfseries LCD\+\_\+\+Init} (void)
+\item 
+\Hypertarget{lcd_8h_a28735c052c54fa576f8f6f8bca963fe4}\label{lcd_8h_a28735c052c54fa576f8f6f8bca963fe4} 
+void {\bfseries LCD\+\_\+\+Command} (unsigned char)
+\item 
+\Hypertarget{lcd_8h_aabb29c7a1ecbadd623142601b109caff}\label{lcd_8h_aabb29c7a1ecbadd623142601b109caff} 
+void {\bfseries LCD\+\_\+\+Char} (unsigned char x)
+\item 
+\Hypertarget{lcd_8h_a22f0a1e06eef47597408d0b782fa49f6}\label{lcd_8h_a22f0a1e06eef47597408d0b782fa49f6} 
+void {\bfseries LCD\+\_\+\+String} (const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{lcd_8h_afedff6ea961e4641984f319129e3a1d4}\label{lcd_8h_afedff6ea961e4641984f319129e3a1d4} 
+void {\bfseries LCD\+\_\+\+String\+\_\+xy} (char, char, const char \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{lcd_8h_ae60d0b62d7eb3fa31266c095d7b3c245}\label{lcd_8h_ae60d0b62d7eb3fa31266c095d7b3c245} 
+void {\bfseries LCD\+\_\+\+Clear} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions LCD 16x2. 
+
+\begin{DoxyDate}{Date}
+2023-\/09-\/22 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Sebasti·n Belalc·zar Vivas \href{mailto:sebasbelalcazar@unicauca.edu.co}{\texttt{ sebasbelalcazar@unicauca.\+edu.\+co}} 
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Copyright}
+Information contained herein is proprietary to and constitutes valuable confidential trade secrets of unicauca, and is subject to restrictions on use and disclosure.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Copyright (c) unicauca 2023. All rights reserved.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The copyright notices above do not evidence any actual or intended publication of this material. 
+\end{DoxyParagraph}
